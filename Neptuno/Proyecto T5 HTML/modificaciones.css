@@ -1,0 +1,28 @@
+body{
+  background-image: url(https://www.caracteristicas.co/wp-content/uploads/2017/05/neptuno-e1569255785939.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+p{
+  font-size: 25px;
+}
+span,input,select{
+   opacity:0.5;
+}
+/*
+td:hover,th:hover{
+	font-size: 50px;
+}
+*/
+.color { color: cyan; }
+.gradiente {
+  background: linear-gradient(to right,purple, white,cyan,blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.enlace {
+  opacity:0;
+}
+.enlace:hover {
+  opacity:100%;
+}

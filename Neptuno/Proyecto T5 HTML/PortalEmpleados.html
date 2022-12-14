@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="modificaciones.css">
+</head>
+<body>
+  <h1 class="mb-0 text-center gradiente">
+  Empresas NEPTUNO S.L.
+  </h1>
+  <p class="text-center color">
+  Este servicio reservado para empleados sirve para añadir datos a la tabla de productos
+   antes de insertar datos revisa la tabla de productos
+  </p>
+  <a href="Productos.jsp" class="link-info">Ver lista de productos</a>
+  <form action="../ServletForm" method="POST">
+  	<div class="input-group mb-3">
+  	  <span class="input-group-text">Id</span>
+   	  <input type="number" min="11" class="form-control" name="Id_Productos" required>
+      <span class="input-group-text">Nombre</span>
+      <input type="text" class="form-control" name="NombreProducto" required>
+      <span class="input-group-text">Proveedor</span>
+      <select class="form-select" required name="NombreCompania">
+	      <option selected disabled>Selecciona una compañía</option>
+		  <option>Exotic Liquids</option>
+		  <option>New Orleans Cajun Delights</option>
+		  <option>Grandma Kelly's Homestead</option>
+		  <option>Tokyo Traders</option>
+		  <option>Cooperativa de Quesos 'Las Cabras'</option>
+		  <option>Mayumi's</option>
+		  <option>Pavlova, Ltd.</option>
+		  <option>Specialty Biscuits, Ltd.</option>
+		  <option>PB Knäckebröd AB</option>
+		  <option>Refrescos Americanas LTDA</option>
+		  <option>Heli Süßwaren GmbH & Co. KG</option>
+		  <option>Plutzer Lebensmittelgroßmärkte AG</option>
+		  <option>Nord-Ost-Fisch Handelsgesellschaft mbH</option>
+		  <option>Formaggi Fortini s.r.l.</option>
+		  <option>Norske Meierier</option>
+		  <option>Bigfoot Breweries</option>
+		  <option>Svensk Sjöföda AB</option>
+		  <option>Aux joyeux ecclésiastiques</option>
+		  <option>New England Seafood Cannery</option>
+		  <option>Leka Trading</option>
+		  <option>Lyngbysild</option>
+		  <option>Zaanse Snoepfabriek</option>
+		  <option>Karkki Oy</option>
+		  <option>G'day, Mate</option>
+		  <option>Ma Maison</option>
+		  <option>Pasta Buttini s.r.l.</option>
+		  <option>Escargots Nouveaux</option>
+		  <option>Gai pâturage</option>
+		  <option>Forêts d'érables</option>
+	  </select>
+      <span class="input-group-text">Categoría</span>
+      <select class="form-select" required name="NombreCategoria">
+	      <option selected disabled>Selecciona una categoría</option>
+		  <option>Bebidas</option>
+		  <option>Condimentos</option>
+		  <option>Repostería</option>
+		  <option>Lácteos</option>
+		  <option>Granos/Cereales</option>
+		  <option>Carnes</option>
+		  <option>Frutas/Verduras</option>
+		  <option>Pescado/Marisco</option>
+	  </select>
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text">Cantidad por unidad</span>
+      <input type="text" class="form-control" name="Cantidad_Unidad" required>
+      <span class="input-group-text">Precio por unidad</span>
+      <input type="text" class="form-control" name="Precio_Unidad" required>
+      <span class="input-group-text">Unidades en existencia</span>
+      <input type="number" class="form-control" name="Unidades_Existencia" required>
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text">Unidades pedidas</span>
+      <input type="number" class="form-control" name="Unidades_Pedidas" required>
+      <span class="input-group-text">Nivel</span>
+      <input type="number" class="form-control" name="Nivel" required>
+      <span class="input-group-text">Suspendido</span>
+      <select class="form-select" required name="Suspendido">
+	      <option selected disabled>Selecciona una opción</option>
+		  <option>Si</option>
+		  <option>No</option>
+	  </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+</body>
+</html>
